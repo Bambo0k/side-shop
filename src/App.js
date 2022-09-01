@@ -5,7 +5,6 @@ import Main from './components/Main/Main';
 import List from './components/List/List';
 import Details from './components/Details/Details';
 import Cart from './components/Cart/Cart';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -33,7 +32,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Main />}></Route>
             <Route path="/list" element={<List />}></Route>
-            <Route path="/details" element={<Details />}></Route>
+            <Route path="/details/:id" element={<Details />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
           </Routes>
         </BrowserRouter>
